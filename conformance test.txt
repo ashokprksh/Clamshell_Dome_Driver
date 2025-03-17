@@ -1,0 +1,102 @@
+20:13:03.998 ASCOM Universal Device Conformance Checker Version 4.1.0.34702, Build time: Tue 17 December 2024 14:02:48
+20:13:03.999 
+20:13:04.000 Operating system is Windows 11 (24H2), Processor is Intel/AMD 64bit, Application is 64bit.
+20:13:04.000 
+20:13:04.000 COM Driver ProgID: ASCOM.AshsanDomelatest.Dome
+20:13:04.001 
+20:13:04.001 CreateDevice                        INFO     Creating NATIVE COM device: ASCOM.AshsanDomelatest.Dome
+20:13:04.450 CreateDevice                        INFO     Successfully created driver
+20:13:05.481 CreateDevice                        OK       Found a valid interface version: 2
+20:13:05.482 CreateDevice                        OK       Driver instance created successfully
+20:13:05.483 
+20:13:05.485 Connect to device
+20:13:05.520 Connected                           OK       Connected to device successfully using Connected = True
+20:13:05.521 
+20:13:05.522 Common Driver Methods
+20:13:05.524 InterfaceVersion                    OK       2
+20:13:05.527 Connected                           OK       True
+20:13:05.529 Description                         OK       Observatory Dome Driver
+20:13:05.530 DriverInfo                          OK       Driver for controlling the observatory dome
+20:13:05.532 DriverVersion                       OK       2.0
+20:13:05.534 Name                                OK       Clamshell Dome
+20:13:05.539 
+20:13:05.543 Action                              INFO     Conform cannot test the Action method
+20:13:05.572 SupportedActions                    OK       Driver returned an empty action list
+20:13:05.574 
+20:13:05.576 DeviceState                         INFO     DeviceState tests omitted - DeviceState is not available in this interface version.
+20:13:05.577 
+20:13:05.578 Can Properties
+20:13:05.579 CanFindHome                         OK       False
+20:13:05.580 CanPark                             OK       True
+20:13:05.581 CanSetAltitude                      OK       False
+20:13:05.582 CanSetAzimuth                       OK       False
+20:13:05.583 CanSetPark                          OK       True
+20:13:05.585 CanSetShutter                       OK       True
+20:13:05.586 CanSlave                            OK       False
+20:13:05.587 CanSyncAzimuth                      OK       False
+20:13:05.588 
+20:13:05.588 Pre-run Checks
+20:13:05.591 DomeSafety                                   Attempting to open shutter as some tests may fail if it is closed...
+20:13:05.600 DomeSafety                          OK       Shutter status: Open
+20:13:05.606 
+20:13:05.606 Properties
+20:13:05.608 Altitude                            OK       0
+20:13:05.609 AtHome                              OK       False
+20:13:05.610 AtPark                              OK       False
+20:13:05.613 Azimuth                             OK       0
+20:13:05.614 ShutterStatus                       OK       Open
+20:13:05.615 Slaved Read                         OK       False
+20:13:05.620 Slaved Write                        OK       Optional member returned a PropertyNotImplementedException (COM Error: 0x80040400) error.
+20:13:05.623 Slewing                             OK       False
+20:13:05.623 
+20:13:05.624 Methods
+20:13:05.626 SlewToAltitude                      OK       Optional member returned a MethodNotImplementedException (COM Error: 0x80040400) error.
+20:13:05.635 SlewToAzimuth                       OK       Optional member returned a MethodNotImplementedException (COM Error: 0x80040400) error.
+20:13:05.637 AbortSlew                           OK       AbortSlew command issued successfully
+20:13:05.641 AbortSlew-Azimuth                   INFO     Aborting SlewToAzimuth test skipped because the driver either cannot slew to azimuth or doesn't have a functioning Slewing property.
+20:13:05.644 AbortSlew-Altitude                  INFO     Aborting SlewToAltitude test skipped because the driver either cannot slew to altitude or doesn't have a functioning Slewing property.
+20:13:05.648 SyncToAzimuth                       OK       Optional member returned a MethodNotImplementedException (COM Error: 0x80040400) error.
+20:13:06.166 CloseShutter                        OK       Shutter closed successfully
+20:13:45.709 OpenShutter                         OK       Shutter opened successfully
+20:14:05.740 FindHome                            OK       Optional member returned a MethodNotImplementedException (COM Error: 0x80040400) error.
+20:14:15.928 Park                                OK       Dome parked successfully
+20:14:26.957 SetPark                             OK       SetPark issued OK
+20:14:26.959 
+20:14:26.960 Post-run Checks
+20:14:26.961 DomeSafety                          INFO     Attempting to close shutter...
+20:14:26.981 DomeSafety                          OK       Shutter successfully closed
+20:14:26.982 DomeSafety                          INFO     Attempting to park dome...
+20:14:28.053 DomeSafety                          OK       Dome successfully parked
+20:14:28.054 
+20:14:28.054 Disconnect from device
+20:14:28.180 Connected                           OK       False
+20:14:28.181 
+20:14:28.183 Conformance test has finished
+20:14:28.184 
+20:14:28.185 Congratulations, no errors, warnings or issues found: your driver passes ASCOM validation!!
+20:14:28.185 
+20:14:28.187 Timing Summary                               See Help for further information.
+20:14:28.188 Timing Summary                               FAST target response time: 0.1 seconds, (configuration and state reporting members).
+20:14:28.188 Timing Summary                               STANDARD target response time: 1.0 second, (property write and asynchronous initiators).
+20:14:28.189 Timing Summary                               EXTENDED target response time: 600.0 seconds, (synchronous methods, ImageArray and ImageArrayVariant).
+20:14:28.190 Timing Summary                               The log shows good and bad timings.
+20:14:28.191                                              
+20:14:28.197 InterfaceVersion                             At 20:13:05.522 InterfaceVersion         0.000 seconds. ✓ (FAST)
+20:14:28.204 Connected                                    At 20:13:05.527 Connected                0.002 seconds. ✓ (FAST)
+20:14:28.206 Description                                  At 20:13:05.529 Description              0.001 seconds. ✓ (FAST)
+20:14:28.207 DriverInfo                                   At 20:13:05.530 DriverInfo               0.001 seconds. ✓ (FAST)
+20:14:28.208 DriverVersion                                At 20:13:05.531 DriverVersion            0.001 seconds. ✓ (FAST)
+20:14:28.209 Name                                         At 20:13:05.533 Name                     0.001 seconds. ✓ (FAST)
+20:14:28.209 SupportedActions                             At 20:13:05.571 SupportedActions         0.028 seconds. ✓ (FAST)
+20:14:28.209 CanFindHome                                  At 20:13:05.578 CanFindHome              0.000 seconds. ✓ (FAST)
+20:14:28.210 Altitude                                     At 20:13:05.607 Altitude                 0.001 seconds. ✓ (FAST)
+20:14:28.211 AtHome                                       At 20:13:05.609 AtHome                   0.001 seconds. ✓ (FAST)
+20:14:28.211 AtPark                                       At 20:13:05.610 AtPark                   0.001 seconds. ✓ (FAST)
+20:14:28.211 Azimuth                                      At 20:13:05.612 Azimuth                  0.001 seconds. ✓ (FAST)
+20:14:28.212 ShutterStatus                                At 20:13:05.613 ShutterStatus            0.001 seconds. ✓ (FAST)
+20:14:28.212 CloseShutter                                 At 20:13:05.655 CloseShutter             0.004 seconds. ✓ (STANDARD)
+20:14:28.213 OpenShutter                                  At 20:13:26.196 OpenShutter              0.001 seconds. ✓ (STANDARD)
+20:14:28.213 Park                                         At 20:14:15.926 Park                     10.184 seconds. OUTSIDE STANDARD RESPONSE TIME TARGET: 1.0 seconds.
+20:14:28.214 SetPark                                      At 20:14:26.957 SetPark                  1.014 seconds. OUTSIDE STANDARD RESPONSE TIME TARGET: 1.0 seconds.
+20:14:28.214 
+20:14:28.215 2 members took longer than their target response times.
